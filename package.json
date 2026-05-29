@@ -1,0 +1,18 @@
+{
+  "name": "telegram-account-panel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Telegram bot panel to manage accounts (website/email/password/date) on Vercel + Upstash Redis with AES-256-GCM encryption.",
+  "scripts": {
+    "set-webhook": "node scripts/set-webhook.js",
+    "delete-webhook": "node scripts/set-webhook.js --delete",
+    "webhook-info": "node scripts/set-webhook.js --info"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.34.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
